@@ -119,6 +119,7 @@ end
 # Set the page size and margins
 Prawn::Document.generate(output_file, page_size: 'A4', margin: [50, 50, 50, 50]) do |pdf|
   # Set font and size
+  # Here, you can add the font file path if you want to use a custom font, also to hadnle special characters, etc
   pdf.font 'Helvetica', size: 12
 
   # Add a title
